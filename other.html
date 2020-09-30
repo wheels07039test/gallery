@@ -59,65 +59,99 @@ div.page {
   display: block;
   overflow: auto;
 }
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 </head>
 <body>
-<div class="page">
-<div class="gallery">
+<div class="row">
+<div class="column">
   <a target="_blank" href="MilkPitcher.jpg">
     <img src="MilkPitcher.png" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="Appliances.jpg">
     <img src="Appliances.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="serpent.jpg">
     <img src="serpent.jpg" alt="Milk Pitcher">
   </a>
 </div>
 
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="mantis.jpg">
     <img src="mantis.jpg" alt="Milk Pitcher">
   </a>
 </div>
 
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="dragons.jpg">
     <img src="dragons.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="Bamboo.jpg">
     <img src="Bamboo.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="geometry.jpg">
     <img src="geometry.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="Wrench.jpg">
     <img src="Wrench.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="Me.jpg">
     <img src="Me.jpg" alt="Milk Pitcher">
   </a>
 </div>
   
-<div class="gallery">
+<div class="column">
   <a target="_blank" href="Leaves.jpg">
     <img src="Leaves.jpg" alt="Milk Pitcher">
   </a>
