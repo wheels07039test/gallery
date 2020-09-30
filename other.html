@@ -39,8 +39,6 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 600px;
-  display: block;
-  overflow: auto
 }
 
 div.gallery:hover {
@@ -56,10 +54,14 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+div.page {
+  display: block;
+  overflow: auto;
+}
 </style>
 </head>
 <body>
-
+<div class="page">
 <div class="gallery">
   <a target="_blank" href="MilkPitcher.jpg">
     <img src="MilkPitcher.png" alt="Milk Pitcher">
@@ -119,6 +121,6 @@ div.desc {
     <img src="Leaves.jpg" alt="Milk Pitcher">
   </a>
 </div>
-  
+</div>
 </body>
 </html>
